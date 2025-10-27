@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Reasons Why This Simple, Natural Skincare System Is Taking Over 2025 Skincare Trends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #2d2d2d;
+            background-color: #ffffff;
+        }
+
+        /* Header Styles */
+        .announcement-bar {
+            background: #c8202f;
+            color: white;
+            height: 38px;
+            text-align: center;
+            font-size: 14.25px;
+            font-weight: 500;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .main-header {
+            background: #0a3161;
+            color: white;
+            height: 55px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .fall-sale-badge {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .discount-btn {
+            background: #c8202f;
+            color: white;
+            height: 35px;
+            padding: 0 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 13.78px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .countdown {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .countdown-unit {
+            background: white;
+            padding: 10px 7px;
+            border-radius: 2px;
+            text-align: center;
+            width: 32px;
+            height: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .countdown-number {
+            font-size: 14px;
+            font-weight: 500;
+            display: block;
+            color: black;
+            line-height: 1;
+        }
+
+        .countdown-label {
+            font-size: 9px;
+            text-transform: uppercase;
+            display: block;
+            color: #dfb142;
+            line-height: 1;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .countdown-separator {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: white;
+            border-radius: 0;
+            padding: 50px 60px;
+            margin-bottom: 0;
+            text-align: left;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            line-height: 52.8px;
+            margin-bottom: 30px;
+            color: #000;
+            font-weight: 400;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            letter-spacing: -1.28px;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            background: #ddd;
+            border-radius: 50%;
+        }
+
+        .author-details {
+            font-size: 12.898px;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            line-height: 17px;
+        }
+
+        .fact-checked {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: #1877f2;
+            font-weight: 600;
+        }
+
+        .fact-checked-icon {
+            width: 18px;
+            height: 18px;
+            background: linear-gradient(135deg, #1877f2 0%, #4a9eff 100%);
+            border-radius: 2px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .fact-checked-icon::after {
+            content: '✓';
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .hero .summary {
+            font-size: 18px;
+            line-height: 27.6px;
+            color: #000;
+            font-style: normal;
+        }
+
+        .summary strong {
+            font-weight: 600;
+            color: #000;
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        .summary .best-skin {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        /* Content Sections */
+        .content-section {
+            background: white;
+            border-radius: 0;
+            padding: 50px 60px;
+            margin-bottom: 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .reason-item {
+            display: grid;
+            grid-template-columns: 243px 1fr;
+            gap: 32px;
+            margin-bottom: 50px;
+            align-items: start;
+        }
+
+        .reason-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .reason-image {
+            width: 243px;
+            height: auto;
+            background: #f5f5f5;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .reason-content h2 {
+            font-size: 28px;
+            line-height: 33.6px;
+            margin-bottom: 15px;
+            color: #000;
+            font-weight: 400;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            letter-spacing: -0.8px;
+        }
+
+        .reason-content p {
+            font-size: 18px;
+            line-height: 27.6px;
+            color: #1f1f1f;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: #faf7f0;
+            padding: 60px 20px;
+            margin-bottom: 0;
+        }
+
+        .cta-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .fall-sale-label {
+            background: #0a3161;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 15px;
+            display: inline-block;
+            margin-bottom: -22px;
+            position: relative;
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 45px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .cta-box {
+            background: white;
+            border-radius: 8px;
+            padding: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            height: 394px;
+        }
+
+        .cta-inner {
+            display: grid;
+            grid-template-columns: 385px 1fr;
+            gap: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .cta-image-container {
+            background: #f5f5f5;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            margin-bottom: 0;
+        }
+
+        .testimonial {
+            font-size: 13px;
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+        }
+
+        .cta-content {
+            padding: 40px 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .gift-banner {
+            background: transparent;
+            padding: 0;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 400;
+            color: #000;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            letter-spacing: 1px;
+        }
+
+        .cta-title {
+            font-size: 27px;
+            font-weight: 700;
+            text-align: center;
+            color: #c8202f;
+            line-height: 32.64px;
+            margin-bottom: 15px;
+            font-family: 'Libre Baskerville', Georgia, serif;
+        }
+
+        .cta-title .black-text {
+            color: #000;
+        }
+
+        .cta-subtitle {
+            text-align: center;
+            font-size: 13px;
+            color: #1f1f1f;
+            margin-bottom: 25px;
+            line-height: 18px;
+        }
+
+        .cta-button {
+            background: #e98044;
+            color: white;
+            padding: 0;
+            height: 74px;
+            border-radius: 8px;
+            font-size: 15.625px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .cta-button::after {
+            content: '→';
+            font-size: 24px;
+        }
+
+        .countdown-timer {
+            text-align: center;
+            font-size: 11px;
+            margin-bottom: 20px;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .countdown-timer-values {
+            display: inline;
+            margin-left: 8px;
+            font-weight: 700;
+            color: #c8202f;
+            font-size: 12px;
+        }
+
+        .risk-guarantee {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 15px;
+            align-items: center;
+            background: #faeee8;
+            border: 1px solid #ffedd7;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            height: 59px;
+        }
+
+        .risk-label {
+            text-align: left;
+            font-size: 12px;
+        }
+
+        .risk-label strong {
+            font-weight: 700;
+            color: #000;
+        }
+
+        .risk-label .risk-high {
+            font-weight: 400;
+            color: #c8202f;
+        }
+
+        .divider {
+            width: 2px;
+            height: 27px;
+            background: transparent;
+            border-left: 2px solid rgba(0,0,0,0.1);
+        }
+
+        .free-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #000;
+            text-align: left;
+        }
+
+        .free-label .shipping-text {
+            font-weight: 400;
+        }
+
+        .guarantee {
+            text-align: center;
+            font-size: 12px;
+            color: #000;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            background: #af8998;
+            padding: 30px 20px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .footer-disclaimers {
+            max-width: 940px;
+            margin: 0 auto 20px;
+            font-size: 10px;
+            line-height: 15.6px;
+            color: white;
+        }
+
+        .footer-disclaimers p {
+            margin-bottom: 15px;
+        }
+
+        .footer-bottom {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top: 0;
+            border-top: none;
+            font-size: 12px;
+            color: white;
+            line-height: 18px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-links .separator {
+            width: 2px;
+            height: 18px;
+            background: transparent;
+            border-left: 2px solid rgba(0,0,0,0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero {
+                padding: 40px 30px;
+            }
+
+            .content-section {
+                padding: 40px 30px;
+            }
+
+            .reason-item {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .reason-image {
+                height: 220px;
+            }
+
+            .reason-content h2 {
+                font-size: 24px;
+            }
+
+            .reason-content p {
+                font-size: 16px;
+            }
+
+            .cta-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .countdown {
+                flex-wrap: wrap;
+            }
+
+            .main-header {
+                font-size: 13px;
+            }
+
+            .risk-guarantee {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .divider {
+                display: none;
+            }
+
+            .risk-label {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="announcement-bar">
+        <span>⬜</span>
+        <span>BEST PRICE EVER + FREE GIFTS TODAY ONLY!</span>
+        <span>🎁</span>
+    </div>
+
+    <div class="main-header">
+        <span class="fall-sale-badge">FALL SALE 🍁</span>
+        <button class="discount-btn">UP TO 46% OFF</button>
+        <div class="countdown">
+            <div class="countdown-unit">
+                <span class="countdown-number" id="hours">02</span>
+                <span class="countdown-label">HRS</span>
+            </div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-unit">
+                <span class="countdown-number" id="minutes">01</span>
+                <span class="countdown-label">MIN</span>
+            </div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-unit">
+                <span class="countdown-number" id="seconds">06</span>
+                <span class="countdown-label">SEC</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <div class="hero">
+            <h1>10 Reasons Why This Simple, Natural Skincare System Is Taking Over 2025 Skincare Trends</h1>
+
+            <div class="author-info">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Image_19.png?v=1740587663&width=1800" alt="Jade M." class="author-avatar" style="border-radius: 50%;">
+                <div class="author-details">
+                    <div>
+                        <strong>By Jade M.</strong>
+                        <span class="fact-checked">
+                            <span class="fact-checked-icon"></span>
+                            Fact Checked
+                        </span>
+                    </div>
+                    <div>Last Updated Aug 9, 2025</div>
+                </div>
+            </div>
+
+            <div class="summary">
+                <p><strong>Summary:</strong> You can now use the natural scientifically proven Frøya skincare system to <span class="best-skin">get the best skin of your life</span>. Erase wrinkles, age spots, dull skin, dark circles, rosacea & make skin look 27 years old again in 9 days (or less)! Keep reading to learn more.</p>
+            </div>
+        </div>
+
+        <!-- Content Section with 10 Reasons -->
+        <div class="content-section">
+            <div class="reason-item">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_-_2025-02-26T181320.544.webp?v=1740590015&width=1800" alt="Frøya Complete System - 4 glass jars with BESTSELLER badge and testimonial" class="reason-image">
+                <div class="reason-content">
+                    <h2>1. Thousands of Women are Getting Results in Days</h2>
+                    <p>Meet the most potent anti-aging skincare ever invented. It's normal to see big results after 9, 6 or even 2 days of use. People experience a youthful glow, less wrinkles, eye bags, dark circles, acne, rosacea and dryness. Look at the products. Have you ever seen skincare like this? The secret? Hyper-potent arctic plants.</p>
+                </div>
+            </div>
+
+            <div class="reason-item">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Rectangle_396.jpg?v=1739813607&width=1800" alt="Before and after skincare comparison" class="reason-image">
+                <div class="reason-content">
+                    <h2>2. A Pure Botanical Buffet For Your Skin - No More Nasty Chemicals On Your Skin</h2>
+                    <p>American women are waking up to the fact that the chemicals we put on our skin gets absorbed in our body. Never have this many women struggled with hormonal imbalance as now, and this shows on their skin! Frøya is leading the way for natural, 0 water, fillers or nasty chemical skincare.</p>
+                </div>
+            </div>
+
+            <div class="reason-item">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/The_Complete_System_for_Mature_Women_s_Skin-06.jpg?v=1740001092&width=1800" alt="Restoring skin bacteria balm" class="reason-image">
+                <div class="reason-content">
+                    <h2>3. It's The Simplest (and most effective) Skincare Routine You'll Ever Follow</h2>
+                    <p>The skincare hype is in over-drive! TikTok, derms & magazines have been pushing a million skincare products on people. 10-step routines are not uncommon. The result? Destroyed skin. Over-washed, dried out, ruined skin barrier. The Frøya system is so simple your senile granpa could follow it. And it's only 20 seconds per day!</p>
+                </div>
+            </div>
+
+            <div class="reason-item">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Image_635cc796-963c-41eb-a537-970ee3956a98.jpg?v=1737044737&width=1800" alt="Person applying skincare to face" class="reason-image">
+                <div class="reason-content">
+                    <h2>4. Your Skin Will Grow Stronger (& Glow)</h2>
+                    <p>Most skincare attack the problem with chemicals. Frøya's hyper potent natural skincare is designed to soothe and build up the skin. That way it's actually the skin that is healing itself. This is way more sustainable and enjoyable from a users point of view. It also makes for amazing long term (but fast) results.</p>
+                </div>
+            </div>
+
+            <div class="reason-item">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_12_7.webp?v=1740588662&width=1800" alt="White wildflower in sunset field" class="reason-image">
+                <div class="reason-content">
+                    <h2>5. Ingredients You Can't Get Anywhere Else</h2>
+                    <p>Frøya uses wild-harvested Arctic plants. These plants grow strong thanks to the harsh winter and short ripening window with 24/7 sun in the summer. You have to climb mountains to get these ingredients; no other skincare brand is willing to do that.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- First CTA Section -->
+    <div class="cta-section">
+        <div class="cta-container">
+            <div class="fall-sale-label">FALL SALE 🍁</div>
+            <div class="cta-box">
+                <div class="cta-inner">
+                    <div class="cta-image-container">
+                        <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_-_2025-02-26T181320.544.webp?v=1740590015&width=1800" alt="The Complete System for Mature Women's Skin" class="product-image">
+                        <p class="testimonial">"I've tried everything, and this is the only thing that has worked for me!"</p>
+                    </div>
+                    <div class="cta-content">
+                        <div class="gift-banner">
+                            🎁 FREE GIFTS WITH YOUR ORDER
+                        </div>
+                        <h2 class="cta-title">UP TO 46% OFF <span class="black-text">FOR A LIMITED TIME ONLY!</span></h2>
+                        <p class="cta-subtitle">This limited-time deal is in high demand and stock keeps selling out.</p>
+                        <button class="cta-button">GET 46% OFF</button>
+                        <div class="countdown-timer">
+                            DEAL ENDING IN:
+                            <span class="countdown-timer-values">
+                                <span id="cta-hours">02</span>:<span id="cta-minutes">00</span>:<span id="cta-seconds">10</span>
+                            </span>
+                        </div>
+                        <div class="risk-guarantee">
+                            <div class="risk-label">
+                                <strong>Sell-Out Risk:</strong> <span class="risk-high">High</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="free-label">
+                                FREE <span class="shipping-text">Shipping</span>
+                            </div>
+                        </div>
+                        <p class="guarantee">Try it now with a 60-Day Money Back Guarantee!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Remaining Content Section -->
+    <div class="container">
+        <div class="content-section">
+            <div class="reason-item">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/SCRUB_2_1.jpg?v=1736743368&width=1800" alt="Frøya Ultra Cleanse & Revive Face Scrub" class="reason-image">
+                <div class="reason-content">
+                    <h2>6. They Are Travel Friendly & TSA Proof</h2>
+                    <p>Since the products contain 0 water, they take up very little space. You can also bring them with you in your cabin baggage when traveling. Not only does it work way better, but it's also going to make your routine more convinient!</p>
+                </div>
+            </div>
+
+            <div class="reason-item">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Reviews_in_media_Froya.png?v=1736744046&width=1800" alt="Magazine reviews of Frøya" class="reason-image">
+                <div class="reason-content">
+                    <h2>7. Women's Health, Bazaar, Elle, Cosmopolitan & Many More Love Frøya</h2>
+                    <p>The Frøya Complete System for Mature Women's Skin sold out 7 times in 2024. One of the reasons for this is that journalists in big magazines wouldn't shut up about the products. The hyper is still in hyper-drive, so I recommend you secure supply now while you can.</p>
+                </div>
+            </div>
+
+            <div class="reason-item">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/snoesea-buckthorn-at-winter-jaak-nilson_0f5afd29-1fa1-40a6-92fb-017633e5ee42.webp?v=1724437341&width=1800" alt="Wild Arctic plants" class="reason-image">
+                <div class="reason-content">
+                    <h2>8. Frøya Promote Diverse & Biogenerative Farming</h2>
+                    <p>Most of the Frøya ingredients grow wild or in hay medows. A dying sight in the mono-cultures of modern 2025 farming principles. Harvesting and cultivating these powerful herbs is saving biodiversity on the planet.</p>
+                </div>
+            </div>
+
+            <div class="reason-item">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/istockphoto-1406708054-612x612.jpg?v=1736744607" alt="Skin barrier diagram" class="reason-image">
+                <div class="reason-content">
+                    <h2>9. Frøya Heals Your Skin Barrier - So Your Skin Takes Care Of It Self</h2>
+                    <p>The typical way your skincare work is to use harsh chemicals to attach the skin problems. Frøya is completely different. The Frøya products are designed to heal the skin barrier so that the skin can take of itself. This is why aging, acne, psoriasis, and eczema all can go away using these balms.</p>
+                </div>
+            </div>
+
+            <div class="reason-item">
+                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Group_754.png?v=1736744786&width=1800" alt="60-day money-back guarantee" class="reason-image">
+                <div class="reason-content">
+                    <h2>10. A Results Or Money Back Guarantee Unheard of In The Skincare Industry</h2>
+                    <p>Most of the big skincare brands would say Frøya is crazy for offering a 60-day, no questions 100% of the money back guarantee. With Frøya results are so certain that you can use the products for 60 days and get all your money back if you don't get results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second CTA Section -->
+    <div class="cta-section">
+        <div class="cta-container">
+            <div class="fall-sale-label">FALL SALE 🍁</div>
+            <div class="cta-box">
+                <div class="cta-inner">
+                    <div class="cta-image-container">
+                        <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_-_2025-02-26T181320.544.webp?v=1740590015&width=1800" alt="The Complete System for Mature Women's Skin" class="product-image">
+                        <p class="testimonial">"I've tried everything, and this is the only thing that has worked for me!"</p>
+                    </div>
+                    <div class="cta-content">
+                        <div class="gift-banner">
+                            🎁 FREE GIFTS WITH YOUR ORDER
+                        </div>
+                        <h2 class="cta-title">UP TO 46% OFF <span class="black-text">FOR A LIMITED TIME ONLY!</span></h2>
+                        <p class="cta-subtitle">This limited-time deal is in high demand and stock keeps selling out.</p>
+                        <button class="cta-button">GET 46% OFF</button>
+                        <div class="countdown-timer">
+                            DEAL ENDING IN:
+                            <span class="countdown-timer-values">
+                                <span id="cta2-hours">02</span>:<span id="cta2-minutes">00</span>:<span id="cta2-seconds">10</span>
+                            </span>
+                        </div>
+                        <div class="risk-guarantee">
+                            <div class="risk-label">
+                                <strong>Sell-Out Risk:</strong> <span class="risk-high">High</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="free-label">
+                                FREE <span class="shipping-text">Shipping</span>
+                            </div>
+                        </div>
+                        <p class="guarantee">Try it now with a 60-Day Money Back Guarantee!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-disclaimers">
+            <p>*Special sale discount is valid only on the first delivery of a new order. Disclaimer: customer perception reports the appearance of clean and glowing skin in as little as 3 days after the product is used as directed. Individual results may vary. If dissatisfied with the results, please reach out after 60 days of use for a full, no-questions refund.</p>
+            <p>Frøya Organics products are not intended to diagnose, treat, cure, or prevent any disease. They are not a substitute for medical advice. Always consult your doctor before use, especially if you have a medical condition or skin sensitivity. Results may vary.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Frøya Organics. All right reserved.</p>
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <span class="separator"></span>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown Timer Function
+        function updateCountdown() {
+            // Get all countdown elements
+            const headerHours = document.getElementById('hours');
+            const headerMinutes = document.getElementById('minutes');
+            const headerSeconds = document.getElementById('seconds');
+            const ctaHours = document.getElementById('cta-hours');
+            const ctaMinutes = document.getElementById('cta-minutes');
+            const ctaSeconds = document.getElementById('cta-seconds');
+            const cta2Hours = document.getElementById('cta2-hours');
+            const cta2Minutes = document.getElementById('cta2-minutes');
+            const cta2Seconds = document.getElementById('cta2-seconds');
+
+            // Set initial time (2 hours, 1 minute, 6 seconds)
+            let totalSeconds = (2 * 3600) + (1 * 60) + 6;
+
+            function tick() {
+                if (totalSeconds <= 0) {
+                    totalSeconds = (2 * 3600) + (1 * 60) + 6; // Reset
+                }
+
+                const hours = Math.floor(totalSeconds / 3600);
+                const minutes = Math.floor((totalSeconds % 3600) / 60);
+                const seconds = totalSeconds % 60;
+
+                const hoursStr = hours.toString().padStart(2, '0');
+                const minutesStr = minutes.toString().padStart(2, '0');
+                const secondsStr = seconds.toString().padStart(2, '0');
+
+                // Update all countdown timers
+                if (headerHours) headerHours.textContent = hoursStr;
+                if (headerMinutes) headerMinutes.textContent = minutesStr;
+                if (headerSeconds) headerSeconds.textContent = secondsStr;
+                if (ctaHours) ctaHours.textContent = hoursStr;
+                if (ctaMinutes) ctaMinutes.textContent = minutesStr;
+                if (ctaSeconds) ctaSeconds.textContent = secondsStr;
+                if (cta2Hours) cta2Hours.textContent = hoursStr;
+                if (cta2Minutes) cta2Minutes.textContent = minutesStr;
+                if (cta2Seconds) cta2Seconds.textContent = secondsStr;
+
+                totalSeconds--;
+            }
+
+            // Update immediately and then every second
+            tick();
+            setInterval(tick, 1000);
+        }
+
+        // Start countdown when page loads
+        document.addEventListener('DOMContentLoaded', updateCountdown);
+    </script>
+</body>
+</html>
