@@ -51,6 +51,7 @@
 
         .announcement-text {
             font-size: 16px;
+            font-family: "PP Pangram Sans", " sans-serif";
         }
 
         .main-header {
@@ -58,7 +59,7 @@
             color: white;
             height: auto;
             padding: 10px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-family: "PP Pangram Sans", " sans-serif";
             display: flex;
             align-items: center;
             justify-content: center;
@@ -128,7 +129,7 @@
         }
 
         /* Main Content Container */
-        .container {
+        .container-inside {
             max-width: 815px;
             margin: 0 auto;
             padding: 0;
@@ -218,6 +219,10 @@
             font-style: normal;
         }
 
+        .summary p {
+            font-family: Pangram, " sans-serif";
+        }
+
         .summary strong {
             font-weight: 600;
             color: #000;
@@ -267,6 +272,8 @@
             line-height: 33.6px;
             letter-spacing: -0.8px;
             margin-bottom: 15px;
+            color: black !important;
+            font-family: "Libre Baskerville";
         }
 
         .reason-item:last-child {
@@ -276,7 +283,8 @@
         .reason-image {
             width: 243px;
             height: auto;
-            object-fit: cover;
+            object-fit: contain;
+            max-width: unset;
         }
 
         .reason-content h2 {
@@ -293,6 +301,7 @@
             font-size: 18px;
             line-height: 27.6px;
             color: #1f1f1f;
+            font-family: Pangram, " sans-serif";
         }
 
         /* CTA Section */
@@ -460,6 +469,7 @@
             padding: 15px;
             border-radius: 4px;
             width: 285px;
+            font-family: Inter;
         }
 
         .risk-label {
@@ -504,8 +514,8 @@
 
         /* Footer */
         .footer {
-            background: #af8998;
-            padding: 26px 20px 34px;
+            background: #af8998 !important;
+            padding: 26px 20px 34px !important;
             text-align: center;
             border: 1px solid #000;
         }
@@ -520,8 +530,9 @@
         }
 
         .footer-disclaimers p {
-            margin-bottom: 12px;
+            margin-bottom: 12px !important;
             text-align: justify;
+            color: white !important;
         }
 
         .footer-bottom {
@@ -536,6 +547,10 @@
             justify-content: center;
             align-items: center;
             gap: 42px;
+        }
+
+        .footer-bottom p {
+            color: white !important;
         }
 
         .footer-links {
@@ -622,14 +637,11 @@
                 line-height: 33.6px;
                 letter-spacing: -0.8px;
                 display: block;
+                color: black !important;
             }
 
             .reason-item .reason-content {
                 display: block;
-            }
-
-            .reason-item .underline {
-                text-decoration: underline;
             }
 
             .reason-image {
@@ -737,6 +749,17 @@
                 margin-top: 5px;
             }
         }
+
+        .shopify-section.shopify-section-group-header-group.shopify-section--announcement-bar,
+        .shopify-section.shopify-section-group-header-group.shopify-section--header,
+        footer.footer {
+            display: none !important;
+        }
+
+        .container {
+            max-width: unset;
+            padding: unset;
+        }
     </style>
 </head>
 
@@ -773,7 +796,7 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="container">
+    <div class="container-inside">
         <div class="hero">
             <h1>10 Reasons Why This Simple, Natural Skincare System Is Taking Over 2025 Skincare Trends</h1>
 
@@ -805,9 +828,11 @@
         <div class="content-section">
             <div class="reason-item">
                 <h2 class="underline">1. Thousands of Women are Getting Results in Days</h2>
-                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_-_2025-02-26T181320.544.webp?v=1740590015&width=1800"
-                    alt="Frøya Complete System - 4 glass jars with BESTSELLER badge and testimonial"
-                    class="reason-image">
+                <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                    <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_-_2025-02-26T181320.544.webp?v=1740590015&width=1800"
+                        alt="Frøya Complete System - 4 glass jars with BESTSELLER badge and testimonial"
+                        class="reason-image">
+                </a>
                 <div class="reason-content">
                     <p>Meet the most potent anti-aging skincare ever invented. It's normal to see big results after 9, 6
                         or even 2 days of use. People experience a youthful glow, less wrinkles, eye bags, dark circles,
@@ -815,7 +840,7 @@
                         secret? Hyper-potent arctic plants.</p>
                 </div>
                 <div class="desktop-wrapper-text">
-                    <h2 class="underline">1. Thousands of Women are Getting Results in Days</h2>
+                    <h2>1. Thousands of Women are Getting Results in Days</h2>
                     <div class="reason-content">
                         <p>Meet the most potent anti-aging skincare ever invented. It's normal to see big results after
                             9, 6
@@ -829,8 +854,10 @@
 
             <div class="reason-item">
                 <h2>2. A Pure Botanical Buffet For Your Skin - No More Nasty Chemicals On Your Skin</h2>
-                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Rectangle_396.jpg?v=1739813607&width=1800"
-                    alt="Before and after skincare comparison" class="reason-image">
+                <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                    <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Rectangle_396.jpg?v=1739813607&width=1800"
+                        alt="Before and after skincare comparison" class="reason-image">
+                </a>
                 <div class="reason-content">
                     <p>American women are waking up to the fact that the chemicals we put on our skin gets absorbed in
                         our body. Never have this many women struggled with hormonal imbalance as now, and this shows on
@@ -853,8 +880,10 @@
 
             <div class="reason-item">
                 <h2>3. It's The Simplest (and most effective) Skincare Routine You'll Ever Follow</h2>
-                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/The_Complete_System_for_Mature_Women_s_Skin-06.jpg?v=1740001092&width=1800"
-                    alt="Restoring skin bacteria balm" class="reason-image">
+                <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                    <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/The_Complete_System_for_Mature_Women_s_Skin-06.jpg?v=1740001092&width=1800"
+                        alt="Restoring skin bacteria balm" class="reason-image">
+                </a>
                 <div class="reason-content">
                     <p>The skincare hype is in over-drive! TikTok, derms & magazines have been pushing a million
                         skincare products on people. 10-step routines are not uncommon. The result? Destroyed skin.
@@ -875,8 +904,10 @@
 
             <div class="reason-item">
                 <h2>4. Your Skin Will Grow Stronger (& Glow)</h2>
-                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Image_635cc796-963c-41eb-a537-970ee3956a98.jpg?v=1737044737&width=1800"
-                    alt="Person applying skincare to face" class="reason-image">
+                <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                    <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Image_635cc796-963c-41eb-a537-970ee3956a98.jpg?v=1737044737&width=1800"
+                        alt="Person applying skincare to face" class="reason-image">
+                </a>
                 <div class="reason-content">
                     <p>Most skincare attack the problem with chemicals. Frøya's hyper potent natural skincare is
                         designed to soothe and build up the skin. That way it's actually the skin that is healing
@@ -897,8 +928,10 @@
 
             <div class="reason-item">
                 <h2>5. Ingredients You Can't Get Anywhere Else</h2>
-                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_12_7.webp?v=1740588662&width=1800"
-                    alt="White wildflower in sunset field" class="reason-image">
+                <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                    <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_12_7.webp?v=1740588662&width=1800"
+                        alt="White wildflower in sunset field" class="reason-image">
+                </a>
                 <div class="reason-content">
                     <p>Frøya uses wild-harvested Arctic plants. These plants grow strong thanks to the harsh winter and
                         short ripening window with 24/7 sun in the summer. You have to climb mountains to get these
@@ -924,8 +957,10 @@
             <div class="cta-box">
                 <div class="cta-inner">
                     <div class="cta-image-container">
-                        <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_-_2025-02-26T181320.544.webp?v=1740590015&width=1800"
-                            alt="The Complete System for Mature Women's Skin" class="product-image">
+                        <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                            <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_-_2025-02-26T181320.544.webp?v=1740590015&width=1800"
+                                alt="The Complete System for Mature Women's Skin" class="product-image">
+                        </a>
                     </div>
                     <div class="cta-content">
                         <div class="gift-banner">
@@ -939,10 +974,12 @@
                         <p class="cta-subtitle">This limited-time deal is in high demand and stock keeps selling out.
                         </p>
                         <button class="cta-button">
-                            GET 46% OFF
-                            <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/svg_9.png?v=1740590877"
-                                alt="I'm sorry, I can't access external URLs directly." class="cta-button-image"
-                                loading="lazy">
+                            <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                                GET 46% OFF
+                                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/svg_9.png?v=1740590877"
+                                    alt="I'm sorry, I can't access external URLs directly." class="cta-button-image"
+                                    loading="lazy">
+                            </a>
                         </button>
                         <div class="countdown-timer">
                             DEAL ENDING IN:
@@ -951,15 +988,17 @@
                                     id="cta-seconds">10</span>
                             </span>
                         </div>
-                        <div class="risk-guarantee">
-                            <div class="risk-label">
-                                <strong>Sell-Out Risk:</strong> <span class="risk-high">High</span>
+                        <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                            <div class="risk-guarantee">
+                                <div class="risk-label">
+                                    <strong>Sell-Out Risk:</strong> <span class="risk-high">High</span>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="free-label">
+                                    FREE <span class="shipping-text">Shipping</span>
+                                </div>
                             </div>
-                            <div class="divider"></div>
-                            <div class="free-label">
-                                FREE <span class="shipping-text">Shipping</span>
-                            </div>
-                        </div>
+                        </a>
                         <p class="guarantee">Try it now with a 60-Day Money Back Guarantee!</p>
                     </div>
                 </div>
@@ -968,12 +1007,14 @@
     </div>
 
     <!-- Remaining Content Section -->
-    <div class="container">
+    <div class="container-inside">
         <div class="content-section">
             <div class="reason-item">
                 <h2>6. They Are Travel Friendly & TSA Proof</h2>
-                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/SCRUB_2_1.jpg?v=1736743368&width=1800"
-                    alt="Frøya Ultra Cleanse & Revive Face Scrub" class="reason-image">
+                <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                    <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/SCRUB_2_1.jpg?v=1736743368&width=1800"
+                        alt="Frøya Ultra Cleanse & Revive Face Scrub" class="reason-image">
+                </a>
                 <div class="reason-content">
                     <p>Since the products contain 0 water, they take up very little space. You can also bring them with
                         you in your cabin baggage when traveling. Not only does it work way better, but it's also going
@@ -993,8 +1034,10 @@
 
             <div class="reason-item">
                 <h2>7. Women's Health, Bazaar, Elle, Cosmopolitan & Many More Love Frøya</h2>
-                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Reviews_in_media_Froya.png?v=1736744046&width=1800"
-                    alt="Magazine reviews of Frøya" class="reason-image">
+                <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                    <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Reviews_in_media_Froya.png?v=1736744046&width=1800"
+                        alt="Magazine reviews of Frøya" class="reason-image">
+                </a>
                 <div class="reason-content">
                     <p>The Frøya Complete System for Mature Women's Skin sold out 7 times in 2024. One of the reasons
                         for this is that journalists in big magazines wouldn't shut up about the products. The hyper is
@@ -1014,8 +1057,10 @@
 
             <div class="reason-item">
                 <h2>8. Frøya Promote Diverse & Biogenerative Farming</h2>
-                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/snoesea-buckthorn-at-winter-jaak-nilson_0f5afd29-1fa1-40a6-92fb-017633e5ee42.webp?v=1724437341&width=1800"
-                    alt="Wild Arctic plants" class="reason-image">
+                <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                    <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/snoesea-buckthorn-at-winter-jaak-nilson_0f5afd29-1fa1-40a6-92fb-017633e5ee42.webp?v=1724437341&width=1800"
+                        alt="Wild Arctic plants" class="reason-image">
+                </a>
                 <div class="reason-content">
                     <p>Most of the Frøya ingredients grow wild or in hay medows. A dying sight in the mono-cultures of
                         modern 2025 farming principles. Harvesting and cultivating these powerful herbs is saving
@@ -1034,8 +1079,10 @@
 
             <div class="reason-item">
                 <h2>9. Frøya Heals Your Skin Barrier - So Your Skin Takes Care Of It Self</h2>
-                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/istockphoto-1406708054-612x612.jpg?v=1736744607"
-                    alt="Skin barrier diagram" class="reason-image">
+                <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                    <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/istockphoto-1406708054-612x612.jpg?v=1736744607"
+                        alt="Skin barrier diagram" class="reason-image">
+                </a>
                 <div class="reason-content">
                     <p>The typical way your skincare work is to use harsh chemicals to attach the skin problems. Frøya
                         is completely different. The Frøya products are designed to heal the skin barrier so that the
@@ -1058,8 +1105,10 @@
 
             <div class="reason-item">
                 <h2>10. A Results Or Money Back Guarantee Unheard of In The Skincare Industry</h2>
-                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Group_754.png?v=1736744786&width=1800"
-                    alt="60-day money-back guarantee" class="reason-image">
+                <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                    <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/Group_754.png?v=1736744786&width=1800"
+                        alt="60-day money-back guarantee" class="reason-image">
+                </a>
                 <div class="reason-content">
                     <p>Most of the big skincare brands would say Frøya is crazy for offering a 60-day, no questions 100%
                         of the money back guarantee. With Frøya results are so certain that you can use the products for
@@ -1086,8 +1135,10 @@
             <div class="cta-box">
                 <div class="cta-inner">
                     <div class="cta-image-container">
-                        <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_-_2025-02-26T181320.544.webp?v=1740590015&width=1800"
-                            alt="The Complete System for Mature Women's Skin" class="product-image">
+                        <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                            <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/image_-_2025-02-26T181320.544.webp?v=1740590015&width=1800"
+                                alt="The Complete System for Mature Women's Skin" class="product-image">
+                        </a>
                     </div>
                     <div class="cta-content">
                         <div class="gift-banner">
@@ -1098,10 +1149,12 @@
                         <p class="cta-subtitle">This limited-time deal is in high demand and stock keeps selling out.
                         </p>
                         <button class="cta-button">
-                            GET 46% OFF
-                            <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/svg_9.png?v=1740590877"
-                                alt="I'm sorry, I can't access external URLs directly." class="cta-button-image"
-                                loading="lazy">
+                            <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                                GET 46% OFF
+                                <img src="https://cdn.shopify.com/s/files/1/0473/9999/3493/files/svg_9.png?v=1740590877"
+                                    alt="I'm sorry, I can't access external URLs directly." class="cta-button-image"
+                                    loading="lazy">
+                            </a>
                         </button>
                         <div class="countdown-timer">
                             DEAL ENDING IN:
@@ -1110,15 +1163,17 @@
                                     id="cta2-seconds">10</span>
                             </span>
                         </div>
-                        <div class="risk-guarantee">
-                            <div class="risk-label">
-                                <strong>Sell-Out Risk:</strong> <span class="risk-high">High</span>
+                        <a href="https://froyaorganics.com/products/the-complete-system-for-mature-women-s-skin">
+                            <div class="risk-guarantee">
+                                <div class="risk-label">
+                                    <strong>Sell-Out Risk:</strong> <span class="risk-high">High</span>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="free-label">
+                                    FREE <span class="shipping-text">Shipping</span>
+                                </div>
                             </div>
-                            <div class="divider"></div>
-                            <div class="free-label">
-                                FREE <span class="shipping-text">Shipping</span>
-                            </div>
-                        </div>
+                        </a>
                         <p class="guarantee">Try it now with a 60-Day Money Back Guarantee!</p>
                     </div>
                 </div>
